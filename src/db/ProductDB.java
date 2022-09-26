@@ -9,6 +9,9 @@ import java.util.List;
 
 public class ProductDB {
     private final List<Product> products;
+    // use an input file to load the products
+
+
 
     public ProductDB() {
         products = new ArrayList<>();
@@ -17,6 +20,7 @@ public class ProductDB {
     public List<Product> getProducts() {
         return products;
     }
+
 
     public void addProduct(String type, String title) throws IllegalArgumentException {
         if (type == null) throw new IllegalArgumentException("Invalid type!");
